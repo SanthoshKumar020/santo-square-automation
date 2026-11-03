@@ -123,8 +123,8 @@ export default function Home() {
     <>
       <ScrollAnimations />
 
-      {/* HERO — video layer (parent supplies /public/videos/hero.mp4 later;
-          the gradient + 3D element carry the hero until then) */}
+      {/* HERO — video layer over a gradient; the gradient carries the hero
+          if the video fails to load */}
       <section id="top" className="relative overflow-hidden pt-28">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#182233_0%,#0a0e13_65%)]" />
         <video
@@ -175,8 +175,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICES */}
-      <section id="services" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20">
+      {/* SERVICES — abstract video background (gradient behind it carries
+          the section if the video fails to load) */}
+      <section id="services" className="relative scroll-mt-24 overflow-hidden py-20">
+        <div className="absolute inset-0 bg-ink" />
+        <video
+          className="absolute inset-0 h-full w-full object-cover opacity-25"
+          src="/videos/abstract.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink via-transparent to-ink" />
+        <div className="relative mx-auto max-w-6xl px-5">
         <h2 data-reveal className="text-3xl font-bold tracking-tight sm:text-4xl">
           What I build
         </h2>
@@ -205,6 +217,7 @@ export default function Home() {
               </div>
             </article>
           ))}
+        </div>
         </div>
       </section>
 
