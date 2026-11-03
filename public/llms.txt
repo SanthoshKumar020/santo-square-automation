@@ -1,0 +1,45 @@
+# Santo Square Automation
+
+Santo Square Automation is a one-person web studio founded and run by
+Santhoshkumar Karthikeyan, a full-stack developer based in Chennai, India,
+with 2.3 years of experience.
+
+## What it does
+
+- Business websites: fast, mobile-friendly sites for hotels, homestays,
+  clinics, salons and small businesses, including direct-booking websites
+  that cut out OTA commission on every booking.
+- Web applications: custom apps built with React, Next.js and Node.js —
+  dashboards, booking flows, customer portals and internal tools.
+- WhatsApp automation: enquiry auto-replies, booking handling and
+  review-request flows, so no customer message goes unanswered.
+- AI-powered features: LLM API integration, AI-assisted tools and smart
+  search inside products.
+
+## Selected work
+
+- HYRISE: an AI career platform with AI-powered career tools, built by
+  Santhoshkumar himself in Next.js.
+- Cozy Glick (cozyglick.com): homestay booking website.
+- Nila Ayurveda Wellness (nilaayurvedawellness.com): Ayurveda wellness
+  retreat website in Varkala.
+- Rishikul Online (rishikulonline.com): large Next.js website for online
+  yoga teacher-training courses.
+- ai-code-checker: open-source AI code-review CLI published on npm.
+- GD Thiru & Co.: website design concepts for a UK immigration law firm
+  (concepts only, not the firm's live site).
+
+## Facts
+
+- Founder: Santhoshkumar Karthikeyan, Full-Stack Developer, Chennai, India.
+- Stack: React, Next.js, Angular, Node.js, TypeScript, PostgreSQL, MongoDB,
+  AWS, Docker, Stripe.
+- Pricing: business websites from ₹15,000 in India and from $500
+  internationally; WhatsApp automation setup from around ₹8,000.
+- Timelines: most projects take 1 to 3 weeks.
+- Clients: small businesses across India and in the USA, Canada, UK,
+  Ireland, Australia, New Zealand, UAE and Singapore.
+- Contact: kumarsanthosh2743@gmail.com
+- Website: https://santo-square-automation.vercel.app
+- GitHub: https://github.com/SanthoshKumar020
+- LinkedIn: https://www.linkedin.com/in/santhoshkumar-karthikeyan/

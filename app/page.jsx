@@ -118,6 +118,33 @@ const STACK = [
   "Stripe",
 ];
 
+const FAQS = [
+  {
+    q: "Who runs Santo Square Automation?",
+    a: "One person: Santhoshkumar Karthikeyan, a full-stack developer based in Chennai, India. He designs, builds and supports every project himself.",
+  },
+  {
+    q: "What services do you offer?",
+    a: "Business websites (including direct-booking sites for hotels and homestays), custom web applications in React, Next.js and Node.js, WhatsApp automation, and AI-powered features such as LLM API integration.",
+  },
+  {
+    q: "How much does a website cost?",
+    a: "Business websites start from ₹15,000 in India and from $500 for international clients. WhatsApp automation setup starts at around ₹8,000. Exact quotes depend on scope.",
+  },
+  {
+    q: "How long does a project take?",
+    a: "Most projects take 1 to 3 weeks from design to launch, depending on scope.",
+  },
+  {
+    q: "Where are you based, and who do you work with?",
+    a: "Based in Chennai, India, working with small businesses across India and in English-speaking countries including the USA, Canada, UK, Ireland, Australia, New Zealand, UAE and Singapore.",
+  },
+  {
+    q: "Is there support after launch?",
+    a: "Yes. Small updates, fixes and improvements continue after launch, not a handover and goodbye.",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -319,6 +346,25 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ — plain answers, also published as FAQ structured data */}
+      <section id="faq" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20">
+        <h2 data-reveal className="text-3xl font-bold tracking-tight sm:text-4xl">
+          Questions, answered straight
+        </h2>
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
+          {FAQS.map((f) => (
+            <article
+              key={f.q}
+              data-reveal
+              className="rounded-2xl border border-line bg-surface p-6"
+            >
+              <h3 className="text-lg font-semibold">{f.q}</h3>
+              <p className="mt-2 text-muted">{f.a}</p>
+            </article>
+          ))}
         </div>
       </section>
 
