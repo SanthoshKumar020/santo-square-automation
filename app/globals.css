@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0e13;
+  --color-surface: #121826;
+  --color-surface-2: #182233;
+  --color-cream: #f2efe9;
+  --color-muted: #9aa7b8;
+  --color-amber: #f5b841;
+  --color-line: #232f42;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: ui-sans-system, -apple-system, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-amber);
+  color: #0a0e13;
+}
+
+/* Sticky stacking work cards: each card sticks at the same offset so the
+   next card slides over the previous one as the user scrolls. */
+.stack-card {
+  position: sticky;
+  top: 88px;
+}
+
+@media (max-width: 640px) {
+  .stack-card {
+    top: 72px;
+  }
+}
+
+/* Gradient covers used when no real screenshot is available. */
+.cover-hyrise {
+  background: linear-gradient(135deg, #1b2a4a 0%, #0f766e 55%, #f5b841 130%);
+}
+.cover-code {
+  background: linear-gradient(135deg, #111827 0%, #1e293b 50%, #0f766e 120%);
+}
+.cover-gdthiru {
+  background: linear-gradient(135deg, #064e3b 0%, #0a0e13 60%, #c2410c 140%);
+}
+.cover-fallback {
+  background: linear-gradient(135deg, #182233 0%, #0f766e 120%);
+}
